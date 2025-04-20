@@ -9,7 +9,7 @@ terraform {
   backend "s3" {
     bucket = "spring-boot-petclinic007"
     key    = "tooling/terraform.tfstate"
-    region = "var.aws_region"
+    region = "eu-north-1"
   }
 
   required_version = ">= 1.6.3"
