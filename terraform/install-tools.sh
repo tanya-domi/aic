@@ -57,23 +57,23 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2
 sudo apt install jq -y
 
 # Installing Helm
-sudo snap install helm --classic
+# sudo snap install helm --classic
 
 # Adding Helm repositories
 
-helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
-helm repo add grafana https://grafana.github.io/helm-charts
-helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
-helm repo update
+# helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+# helm repo add grafana https://grafana.github.io/helm-charts
+# helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+# helm repo update
 
-# Install Prometheus
-helm install prometheus prometheus-community/kube-prometheus-stack --namespace monitoring --create-namespace
+# # Install Prometheus
+# helm install prometheus prometheus-community/kube-prometheus-stack --namespace monitoring --create-namespace
 
-# Install Grafana
-helm install grafana grafana/grafana --namespace monitoring --create-namespace
+# # Install Grafana
+# helm install grafana grafana/grafana --namespace monitoring --create-namespace
 
 # Install ingress-nginx
-helm install ingress-nginx ingress-nginx/ingress-nginx
+# helm install ingress-nginx ingress-nginx/ingress-nginx
 
 echo "Initialization script completed successfully."
 
